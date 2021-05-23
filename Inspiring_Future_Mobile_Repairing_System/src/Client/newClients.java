@@ -8,6 +8,8 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.Font;
 
 public class newClients {
 
@@ -47,6 +49,7 @@ public class newClients {
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
+		panel.setBackground(new Color(0, 51, 153));
 		panel.setBounds(10, 10, 269, 753);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
@@ -78,5 +81,11 @@ public class newClients {
 		btnNewButton_2_1.setForeground(new Color(255, 255, 255));
 		btnNewButton_2_1.setBackground(new Color(51, 0, 153));
 		panel_1.add(btnNewButton_2_1);
+		
+		JLabel lblNewLabel = new JLabel("Developed by @Inspiring Future ");
+		lblNewLabel.setForeground(new Color(255, 255, 255));
+		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 17));
+		lblNewLabel.setBounds(10, 712, 247, 31);
+		panel.add(lblNewLabel);
 	}
 }
